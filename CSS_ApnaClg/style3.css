@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+div{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    display:inline-block;
+}
+#container{
+    height:200px;
+    width:800px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: flex-start;
+    
+}
+#box1{
+    background-color: aqua;
+    flex-grow: 1;
+}
+#box2{
+    background-color: pink;
+    flex-shrink: 2;
+    
+}
+#box3{
+    background-color: rgb(214, 228, 84);
+}
+#box4{
+    background-color: red;
+}
+#box5{
+    background-color: violet;
+}

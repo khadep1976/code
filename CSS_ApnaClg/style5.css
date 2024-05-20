@@ -1,0 +1,42 @@
+.navbar{
+    height:200px;
+    width: 200px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    position:absolute;
+    transition-duration:5ms;
+    transition-timing-function: ease-in linear steps(3);
+    top:200px;
+    left:400px;
+    animation:colorAnimate 2s ease-in 0s infinite alternate-reverse;
+}
+@keyframes colorAnimate{
+    from{
+        left:0px;
+        background-color: yellow;
+    }
+    to{
+        left:300px;
+        background-color: green;
+        color:white;
+    }
+}
+/* @media(min-width=200px){
+    div{
+        background-color: red;
+    }
+}
+@media(min-width=200px)and(max-width:400px){
+    div{
+        background-color: yellowgreen;
+    }
+} */
+div:hover{
+    background-color: orange;
+    /*color:violet;
+     transform:scale(2,1);
+    rotate: 90deg; 
+    transform: translatex(-200px);
+    transform:skewx(45deg);
+    transform:skewy(45deg);*/
+}

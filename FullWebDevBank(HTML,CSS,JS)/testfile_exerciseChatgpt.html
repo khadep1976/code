@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #00A5E3;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .input-group input {
+            width: 285px;
+            padding: 5px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border: 1px solid #00A5E3;
+            border-radius: 5px;
+        }
+
+        .input-group input:focus {
+            outline-color: #00A5E3;
+        }
+
+        .btn {
+            background-color: #00A5E3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0077A8;
+        }
+        
+        .message {
+            background-color: #0077A8;
+            color: white;
+        }
+        
+        .number {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+	</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Exercise</h2>
+        <div th:if="${message != null}" class="message"> 
+           [[${message}]]
+        </div>
+        <form th:action="@{/exercise}" method="post" role="form" th:object="${exercise}">
+            <div class="input-group">
+                <label for="name">Which exercise would you like to select?</label>
+            </div>
+            <div class="shop-section">
+                <div class=" box1 box">
+                    <div class="box-content">
+                        <h2>Yoga</h2>
+                        <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                        <p>See more</p>
+                    </div>
+                </div>
+        
+                <div class=" box2 box">
+                    <div class="box-content">
+                        <h2>Health & Personal Care</h2>
+                        <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                        <p>See more</p>
+                    </div>
+                </div>
+        
+                <div class=" box3 box">
+                    <div class="box-content">
+                        <h2>Furniture</h2>
+                        <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                        <p>See more</p>
+                    </div>
+                </div>
+        
+                <div class=" box4 box">
+                    <div class="box-content">
+                        <h2>Electronics</h2>
+                        <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                        <p>See more</p>
+                    </div>
+                </div>
+        
+                <div class=" box5 box">
+                    <div class="box-content">
+                        <h2>Beauty pics </h2>
+                        <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                        <p>See more</p>
+                    </div>
+                </div>
+        
+                <div class=" box6 box">
+                    <div class="box-content">
+                        <h2>Pet Care</h2>
+                        <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                        <p>See more</p>
+                    </div>
+                </div>
+        
+                <div class=" box7 box">
+                    <div class="box-content">
+                        <h2>New Arrival in Toys</h2>
+                        <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                        <p>See more</p>
+                    </div>
+                </div>
+        
+                <div class=" box8 box">
+                    <div class="box-content">
+                        <h2>Discover Fashine Trends</h2>
+                        <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                        <p>See more</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn">Continue</button>
+        </form>
+    </div>
+</body>
+</html>

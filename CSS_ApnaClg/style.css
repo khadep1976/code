@@ -1,0 +1,110 @@
+/* h1{
+    color:green;
+}
+
+p{
+    color:blueviolet;
+}
+
+button{
+    color:brown;
+    background-color:green;
+}
+
+ body{
+    background-color:black;
+}  
+
+#Heading1{
+    color:chocolate;
+} 
+#Heading2{
+    color:deeppink
+}
+
+.myClass{
+color:cornflowerblue;
+}
+
+#box{
+    background-color: rgb(239, 74, 239);
+}
+#Heading{
+    text-align: center;
+}
+p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration:none;
+}
+#head1{
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif
+}
+#outer{
+    font-size: 25px;
+}
+
+#inner{
+    font-size: 10px;
+}
+
+#one{
+    font-size: 25px;
+    line-height:normal;
+    text-transform: capitalize;
+}
+#three{
+    font-size: 10px;
+}
+div{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+     border-radius:15px;
+    border-radius:50%; 
+    background-color: pink;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blueviolet;
+    border:2px solid blue;
+    padding-left:20px;
+    padding:25px;
+
+}
+
+*{
+    padding:0;
+    margin:0;
+    color:white
+
+}
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+}
+button{
+    background-color: #f08804;
+}
+#logo{
+    color: #f08804;
+    font-size:25px;
+}
+a{
+    margin-right: 200px;
+    text-decoration:none;
+}*/
+
+#box1 {
+    height: 100px;
+    width:100px;
+    background-color:green;
+}
+
+#box2 {
+    height: 50px;
+    width:30%;
+    background-color:yellow;
+}

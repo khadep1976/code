@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Page</title>
+    <style>
+		
+ body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #00A5E3;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .input-group input {
+            width: 285px;
+            padding: 5px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border: 1px solid #00A5E3;
+            border-radius: 5px;
+        }
+
+        .input-group input:focus {
+            outline-color: #00A5E3;
+        }
+
+        .input-gr label{
+            display: block;
+            font-weight: bold;
+            text-align: left;
+        }
+/*
+        .input-gr input{
+            width: 285px;
+            padding: 2px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border: 1px solid #00A5E3;
+            border-radius: 5px;
+            
+        }
+*/
+        .add-more {
+            color: #00A5E3;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .add-more:hover {
+            color: #0077A8;
+        }
+
+        .btn {
+            background-color: #00A5E3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0077A8;
+        }
+        
+        .message {
+        background-color: #0077A8;
+        color: white;
+        }
+	</style>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Exercise</h2>
+        
+        <div th:if="${message != null}" class="message"> 
+           [[${message}]]
+        </div>
+          
+        <form 
+        
+        th:action="@{/exercise}" 
+        method="post"
+        role="form"
+        th:object="${exercise}"
+        >
+            <div class="input-group">
+                <label for="name">Which exercise would you like to select?</label>
+            </div>
+            
+            
+            <div class="input-gr" >
+                <label for="role">
+                    1. Yoga
+                    <p>See more</p>
+                    <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="Admin" >
+                </label>
+            </div><br>
+
+            
+            
+             <div class="input-gr">
+                <label for="role">
+                    2. walking
+                <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="User" >
+                </label>
+            </div><br>
+
+            <div class="input-gr">
+                <label for="role">3. Pilates
+                <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="Admin" >
+                </label>
+            </div><br>
+            
+            <div class="input-gr">
+                <label for="role">4. Swimming
+                <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="User" >
+                </label>
+            </div><br>
+
+            <div class="input-gr">
+                <label for="role">5. Running
+                <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="User" >
+                </label>
+            </div><br>
+
+            <div class="input-gr">
+                <label for="role">6. Cycle
+                <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="User" >
+                </label>
+            </div><br>
+
+            <div class="input-gr">
+                <label for="role">7. Dance
+                <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="User" >
+                </label>
+            </div><br>
+
+            <div class="input-gr">
+                <label for="role">8. Kabaddi
+                <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="User" >
+                </label>
+            </div><br>
+
+            <div class="input-gr">
+                <label for="role">9. Table Tannis
+                <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="User" >
+                </label>
+            </div><br>
+
+            <div class="input-gr">
+                <label for="role">10. Cricket
+                <input th:field="*{role}" type="checkbox" id="role" name="role" th:value="User" >
+               </label>
+            </div><br>
+
+            <div class="add-more">
+                <label for="role">Add More</label>
+            </div>
+
+            <br>
+            <button type="submit" class="btn">Continue</button>
+        </form>
+    </div>
+</body>
+</html>

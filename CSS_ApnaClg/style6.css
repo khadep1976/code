@@ -1,0 +1,16 @@
+.loader{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    border:15px solid #ffe66d;
+    border-top:15px solid #4ecdc4;
+    animation:spinLoder 2s steps(50) 0s infinite normal; 
+}
+@keyframes spinLoder{
+    from{
+        rotate:0deg;
+    }
+    to{
+        rotate:360deg;
+    }
+}
